@@ -1,89 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.0.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.0.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.0.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.0.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.0.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.0.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.0.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.0.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.0.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.0.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Asesoría jurídica online. Asesoramiento confiable</title>
+    <meta
+      content="Ciberlegal, abogados experiencia y trayectoria de éxitos para resolver sus problemas legales"
+      name="description"
+    />
+    <meta
+      content="despido, asesoramiento, representacion, civil, laboral, acuerdo, suspension, divorcio, contrato, 
+  cobro, demanda, dano, daño, perjuicio, juicio, telegrama, carta documento, descargo, tributario, AFIP, administrativo"
+      name="keywords"
+    />
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <section id="hero">
+      <div class="hero-container">
+        <a href="index.html" class="hero-logo" data-aos="zoom-in"
+          ><img src="assets/img/hero-logo.png" alt=""
+        /></a>
+        <h1 data-aos="zoom-in">CIBERLEGAL</h1>
+        <h2 data-aos="fade-up">Asesoramiento legal rápido, simple y online.</h2>
+        <a data-aos="fade-up" href="#services" class="btn-get-started scrollto"
+          >Ver más</a
+        >
+      </div>
+    </section>
+    <header id="header" class="d-flex align-items-center">
+      <div class="container">
+        <div class="logo d-block d-lg-none">
+          <a href="index.html"
+            ><img src="assets/img/logo.png" alt="" class="img-fluid"
+          /></a>
+        </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        <nav class="nav-menu d-none d-lg-block">
+          <ul class="nav-inner">
+            <li><a href="#services">Servicios</a></li>
+            <li class="nav-logo">
+              <a href="index.html"
+                ><img src="assets/img/logo.png" alt="" class="img-fluid"
+              /></a>
+            </li>
+            <li><a href="https://wa.me/5491171798800">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <main id="main">
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2></h2>
+            <p>
+              Servicios confiables y especializados con ámplia trayectoria de
+              éxito
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
+                <i class="bx bx-receipt"></i>
+                <h4>Laboral</h4>
+                <p>
+                  Extensa experiencia en asesoramiento y representación en
+                  conflictos laborales, brindando soluciones adecuadas a
+                  empresas y/o sus áreas de RRHH tanto en sus situaciones de
+                  conflicto, como en la interpretación de leyes y convenios
+                  colectivos de trabajo.
+                </p>
+              </div>
+              <div
+                class="icon-box mt-5"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <i class="bx bx-cube-alt"></i>
+                <h4>Empresarial y comercial</h4>
+                <p>
+                  Su PyME puede contar con asesoramiento legal rápido y
+                  confiable sin necesidad de tener un área de legales. Pague
+                  solo por lo que usa. Tenemos soluciones a la medida de
+                  nuestros clientes.
+                </p>
+              </div>
+              <div
+                class="icon-box mt-5"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <i class="bx bx-images"></i>
+                <h4>Sucesiones</h4>
+                <p>
+                  Amplia experiencia en trámites sucesorios en CABA y provincia
+                  de Buenos Aires. Hacemos rápidamente su presupuesto. Si
+                  necesita vender o simplemente regularizar la situación
+                  registral de sus bienes heredados puede consultarnos.
+                  Brindamos asesoramiento legal confiable, rápido y sin
+                  sorpresas.
+                </p>
+              </div>
+            </div>
+            <div
+              class="image col-lg-6 order-1 order-lg-2"
+              style="background-image: url('assets/img/services.jpg')"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <a href="#header" class="scrollto footer-logo"
+                ><img src="assets/img/hero-logo.png" alt=""
+              /></a>
+              <h3>CIBERLEGAL</h3>
+              <p>Abogados online</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>ideasweb</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://ideasweb.studio/">ideasweb.studio</a>
+        </div>
+      </div>
+
+      <a
+        href="https://wa.me/5491171798800"
+        class="whatsapp"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i
+      ></a>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
